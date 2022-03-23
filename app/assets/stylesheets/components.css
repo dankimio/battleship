@@ -1,6 +1,7 @@
 .atom {
   @apply w-8 h-8 flex items-center justify-center bg-gray-3;
 
+  /* This could be probably extracted to outer element, e.g. .ship */
   &.silhouette {
     @apply bg-gray-6;
 
