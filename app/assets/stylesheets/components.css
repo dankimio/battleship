@@ -1,0 +1,15 @@
+.atom {
+  @apply w-8 h-8 flex items-center justify-center;
+
+  &:hover, &.hover {
+    & .hit {
+      @apply ring-2 ring-gray-1;
+    }
+  }
+
+  &.atom-hit {
+    & .hit {
+      @apply bg-red-0 ring-2 ring-red-0;
+    }
+  }
+}
