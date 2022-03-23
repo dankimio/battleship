@@ -1,6 +1,10 @@
 .atom {
   @apply w-8 h-8 flex items-center justify-center;
 
+  & .hit {
+    @apply rounded-full w-3 h-3 bg-gray-2;
+  }
+
   &:hover, &.hover {
     & .hit {
       @apply ring-2 ring-gray-1;
