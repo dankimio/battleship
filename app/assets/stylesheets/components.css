@@ -1,5 +1,5 @@
 .atom {
-  @apply w-8 h-8 flex items-center justify-center;
+  @apply w-8 h-8 flex items-center justify-center bg-gray-3;
 
   & .hit {
     @apply rounded-full w-3 h-3 bg-gray-2;
