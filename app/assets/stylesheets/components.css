@@ -24,4 +24,12 @@
   &.front-submarine {
     @apply rounded-t-full;
   }
+
+  &.back-aircraft-carrier {
+    @apply rounded-b-md;
+  }
+
+  &.back-default {
+    @apply rounded-b-full;
+  }
 }
