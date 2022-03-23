@@ -29,6 +29,10 @@
     @apply rounded-t-full;
   }
 
+  &.middle {
+    /* Empty class for consistency */
+  }
+
   &.back-aircraft-carrier {
     @apply rounded-b-md;
   }
