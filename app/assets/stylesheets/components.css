@@ -1,5 +1,17 @@
 .ship {
   @apply flex;
+
+  &.ship-vertical {
+    @apply flex-col;
+  }
+
+  &.ship-horizontal {
+    @apply flex-row;
+
+    & .atom {
+      @apply rotate-90;
+    }
+  }
 }
 
 .atom {
