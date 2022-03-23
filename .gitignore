@@ -28,3 +28,8 @@
 !/app/assets/builds/.keep
 
 /node_modules
+
+tmp/pids/server.pid
+
+# macOS
+.DS_Store
