@@ -12,4 +12,12 @@
       @apply bg-red-0 ring-2 ring-red-0;
     }
   }
+
+  &.front-aircraft-carrier {
+    @apply rounded-t-md;
+  }
+
+  &.front-submarine {
+    @apply rounded-t-full;
+  }
 }
