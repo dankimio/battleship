@@ -1,1 +1,3 @@
 /* Entry point for your PostCSS build */
+
+@import "./typography.css";
