@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   root "pages#index"
 
   resources :components, only: %i[index] do
-    get 'colors', 'fonts', 'interface', 'ships', on: :collection
+    get 'board', 'colors', 'fonts', 'interface', 'ships', on: :collection
   end
 end
