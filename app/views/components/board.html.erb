@@ -30,7 +30,7 @@
       <%# Main player: ships %>
       <div class="absolute top-0 pointer-events-none">
         <div class="board board-main">
-          <div class="ship ship-vertical items-center col-span-1  row-span-5 col-start-2 pointer-events-auto">
+          <div class="ship ship-vertical items-center col-span-1 row-span-5 col-start-2 pointer-events-auto">
             <div class="spacer spacer-edge"></div>
             <div class="atom front-aircraft-carrier"><div class="hit"></div></div>
             <div class="spacer spacer-between"></div>
@@ -57,6 +57,8 @@
             <div class="atom front-default"><div class="hit"></div></div>
             <div class="spacer spacer-edge"></div>
           </div>
+
+          <%= render CruiserComponent.new(direction: :vertical, position: [4, 4], hits: [false, false]) %>
         </div>
       </div>
     </div>
