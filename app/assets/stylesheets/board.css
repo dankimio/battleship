@@ -21,4 +21,8 @@
 
 .board-atom {
   @apply rounded bg-blue-3;
+
+  &:hover {
+    @apply bg-blue-2;
+  }
 }
