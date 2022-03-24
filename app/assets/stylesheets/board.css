@@ -20,10 +20,26 @@
 }
 
 .board-atom {
-  @apply rounded bg-blue-3;
+  @apply rounded;
+}
 
-  &:hover {
-    @apply bg-blue-2;
+.board-main {
+  & .board-atom {
+    @apply bg-blue-3;
+
+    &:hover {
+      @apply bg-blue-2;
+    }
+  }
+}
+
+.board-opponent {
+  & .board-atom {
+    @apply bg-gray-5;
+
+    &:hover {
+      @apply bg-gray-4;
+    }
   }
 }
 

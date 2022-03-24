@@ -5,12 +5,46 @@
 
   <h2 class="header-1 mb-8">Board / grid</h2>
 
+  <%# Board: main player %>
   <%= render 'board_letters' %>
-
   <div class="flex flex-row mb-12">
     <%= render 'board_numbers' %>
 
-    <div class="board">
+    <div class="board board-main">
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div class="board-atom"></div>
+      <div></div>
+
+      <% 9.times do %>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div class="board-atom"></div>
+        <div></div>
+      <% end %>
+    </div>
+  </div>
+
+  <%# Board: main player %>
+  <%= render 'board_letters' %>
+  <div class="flex flex-row mb-12">
+    <%= render 'board_numbers' %>
+
+    <div class="board board-opponent">
       <div class="board-atom"></div>
       <div class="board-atom"></div>
       <div class="board-atom"></div>
