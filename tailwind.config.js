@@ -4,15 +4,35 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     './app/views/**/*.html.erb',
+    './app/components/**/*.rb',
+    './app/components/**/*.html.erb',
     './app/helpers/**/*.rb',
     './app/assets/stylesheets/**/*.css',
     './app/javascript/**/*.js'
+  ],
+  safelist: [
+    {
+      pattern: /(col|row)-start-(1|2|3|4|5|6|7|8|9|10)/
+    },
+    {
+      pattern: /(col|row)-span-(1|2|3|4|5)/
+    },
   ],
   theme: {
     extend: {
       fontFamily: {
         'sans': ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
       },
+      gridColStart: {
+        '8': '8',
+        '9': '9',
+        '10': '10',
+      },
+      gridRowStart: {
+        '8': '8',
+        '9': '9',
+        '10': '10',
+      }
     },
     colors: {
       transparent: 'transparent',
@@ -37,7 +57,7 @@ module.exports = {
       red: {
         0: '#FF344C',
       }
-    }
+    },
   },
   plugins: [],
 }
