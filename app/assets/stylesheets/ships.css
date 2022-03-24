@@ -1,5 +1,5 @@
 .ship {
-  @apply flex;
+  @apply flex items-center pointer-events-auto;
 
   &.ship-vertical {
     @apply flex-col;
