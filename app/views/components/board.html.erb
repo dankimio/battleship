@@ -30,39 +30,13 @@
       <%# Main player: ships %>
       <div class="absolute top-0 pointer-events-none">
         <div class="board board-main">
-          <div class="ship ship-vertical items-center col-span-1 row-span-5 col-start-2 pointer-events-auto">
-            <div class="spacer spacer-edge"></div>
-            <div class="atom front-aircraft-carrier"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom back-aircraft-carrier"><div class="hit"></div></div>
-            <div class="spacer spacer-edge"></div>
-          </div>
-
-          <div class="ship ship-horizontal items-center col-span-5 row-span-1 row-start-2 col-start-4 pointer-events-auto">
-            <div class="spacer spacer-edge"></div>
-            <div class="atom back-aircraft-carrier"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom middle"><div class="hit"></div></div>
-            <div class="spacer spacer-between"></div>
-            <div class="atom front-default"><div class="hit"></div></div>
-            <div class="spacer spacer-edge"></div>
-          </div>
-
+          <%= render AircraftCarrierComponent.new(direction: :vertical, position: [2, 1]) %>
           <%= render CruiserComponent.new(direction: :horizontal, position: [4, 4]) %>
           <%= render DestroyerComponent.new(direction: :vertical, position: [6, 6]) %>
           <%= render DestroyerComponent.new(direction: :horizontal, position: [1, 7]) %>
           <%= render SubmarineComponent.new(direction: :horizontal, position: [1, 9]) %>
           <%= render BattleshipComponent.new(direction: :horizontal, position: [5, 10]) %>
+          <%= render AircraftCarrierComponent.new(direction: :horizontal, position: [4, 2]) %>
         </div>
       </div>
     </div>
