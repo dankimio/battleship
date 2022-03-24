@@ -1,30 +1,5 @@
 <div class="max-w-2xl mx-auto py-8">
   <h1 class="text-5xl font-bold mb-8">Components</h1>
 
-  <ul class="flex flex-row gap-x-4">
-    <li>
-      <%= link_to 'Colors',
-        colors_components_path,
-        class: 'underline hover:text-gray-1'
-      %>
-    </li>
-    <li>
-      <%= link_to 'Fonts',
-        fonts_components_path,
-        class: 'underline hover:text-gray-1'
-      %>
-    </li>
-    <li>
-      <%= link_to 'Interface',
-        interface_components_path,
-        class: 'underline hover:text-gray-1'
-      %>
-    </li>
-    <li>
-      <%= link_to 'Ships',
-        ships_components_path,
-        class: 'underline hover:text-gray-1'
-      %>
-    </li>
-  </ul>
+  <%= render 'navigation' %>
 </div>
