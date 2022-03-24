@@ -25,3 +25,7 @@
   font-size: 14px;
   letter-spacing: 0.1px;
 }
+
+.grid-header {
+  @apply uppercase font-semibold text-xs my-auto text-gray-0;
+}
