@@ -5,26 +5,14 @@
 
   <h2 class="header-1 mb-8">Board / grid</h2>
 
-  <%# Board: main player %>
+  <%# Main player: board %>
   <%= render 'board_letters' %>
   <div class="flex flex-row mb-12">
     <%= render 'board_numbers' %>
 
     <div class="relative">
       <div class="board board-main">
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div></div>
-
-        <% 9.times do %>
+        <% 10.times do %>
           <div class="board-atom"></div>
           <div class="board-atom"></div>
           <div class="board-atom"></div>
@@ -39,9 +27,9 @@
         <% end %>
       </div>
 
+      <%# Main player: ships %>
       <div class="absolute top-0 pointer-events-none">
         <div class="board board-main">
-
           <div class="ship ship-vertical items-center col-span-1  row-span-5 col-start-2 pointer-events-auto">
             <div class="spacer spacer-edge"></div>
             <div class="atom front-aircraft-carrier"><div class="hit"></div></div>
@@ -74,25 +62,13 @@
     </div>
   </div>
 
-  <%# Board: main player %>
+  <%# Board: opponent %>
   <%= render 'board_letters' %>
   <div class="flex flex-row mb-12">
     <%= render 'board_numbers' %>
 
     <div class="board board-opponent">
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div></div>
-
-      <% 9.times do %>
+      <% 10.times do %>
         <div class="board-atom"></div>
         <div class="board-atom"></div>
         <div class="board-atom"></div>
