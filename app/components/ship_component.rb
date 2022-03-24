@@ -7,7 +7,7 @@ class ShipComponent < ViewComponent::Base
     # Vertical ships are rendered bottom to top,
     # since we want to display front at the top,
     # therefore @hits must be reversed.
-    @hits = direction == :vertical ? hits.reverse : hits
+    @hits = direction == :horizontal ? hits.reverse : hits
 
     @class_list = [
       "col-start-#{@x}",

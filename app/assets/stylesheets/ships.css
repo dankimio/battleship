@@ -1,11 +1,6 @@
 .ship {
   @apply flex;
 
-  /*
-    .ship-vertical and .ship-horizontal won't work
-    since we cannot span ships across grid columns and rows
-    TODO: move -vertical and -horizontal to .atom
-  */
   &.ship-vertical {
     @apply flex-col;
 
@@ -15,7 +10,7 @@
   }
 
   &.ship-horizontal {
-    @apply flex-row;
+    @apply flex-row-reverse;
 
     & .front-default,
     & .front-aircraft-carrier,

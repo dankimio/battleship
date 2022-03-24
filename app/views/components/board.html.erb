@@ -58,7 +58,9 @@
             <div class="spacer spacer-edge"></div>
           </div>
 
-          <%= render CruiserComponent.new(direction: :horizontal, position: [4, 4], hits: [false, false]) %>
+          <%= render CruiserComponent.new(direction: :horizontal, position: [4, 4]) %>
+          <%= render DestroyerComponent.new(direction: :vertical, position: [6, 6]) %>
+          <%= render DestroyerComponent.new(direction: :horizontal, position: [2, 8]) %>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-class CruiserComponent < ShipComponent
-  SIZE = 2
+class DestroyerComponent < ShipComponent
+  SIZE = 3
 
-  def initialize(direction:, position:, hits: [false, false])
+  def initialize(direction:, position:, hits: [false, false, false])
     super
 
     if vertical?
