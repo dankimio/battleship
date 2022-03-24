@@ -15,7 +15,7 @@
   }
 
   &.ship-horizontal {
-    @apply flex-row-reverse;
+    @apply flex-row;
 
     & .front-default,
     & .front-aircraft-carrier,
