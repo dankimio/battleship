@@ -36,25 +36,30 @@
   & .spacer-edge {
     @apply border-transparent;
   }
+
+  &.silhouette {
+    & .atom {
+      @apply bg-gray-6;
+
+      & .hit {
+        @apply bg-gray-3;
+      }
+
+      &:hover {
+        & .hit {
+          @apply ring-0;
+        }
+      }
+    }
+
+    & .spacer-between {
+      @apply border-gray-6;
+    }
+  }
 }
 
 .atom {
   @apply w-8 h-8 flex items-center justify-center bg-gray-3;
-
-  /* This could be probably extracted to outer element, e.g. .ship */
-  &.silhouette {
-    @apply bg-gray-6;
-
-    & .hit {
-      @apply bg-gray-3;
-    }
-
-    &:hover {
-      & .hit {
-        @apply ring-0;
-      }
-    }
-  }
 
   & .hit {
     @apply rounded-full w-3 h-3 bg-gray-2;

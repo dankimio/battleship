@@ -1,5 +1,5 @@
 class ShipComponent < ViewComponent::Base
-  def initialize(direction:, position:, hits:)
+  def initialize(direction:, position:, hits:, silhouette:)
     @direction = direction
     @x, @y = position
 
@@ -14,6 +14,7 @@ class ShipComponent < ViewComponent::Base
       "row-start-#{@y}",
       "ship-#{@direction}"
     ]
+    @class_list << 'silhouette' if silhouette
   end
 
   def classes
