@@ -1,5 +1,5 @@
 class ShipComponent < ViewComponent::Base
-  def initialize(direction:, position:, hits:, silhouette:)
+  def initialize(direction:, position: nil, hits:, silhouette:)
     @direction = direction
     @x, @y = position
 
@@ -10,10 +10,9 @@ class ShipComponent < ViewComponent::Base
     @hits = direction == :horizontal ? hits.reverse : hits
 
     @class_list = [
-      "col-start-#{@x}",
-      "row-start-#{@y}",
       "ship-#{@direction}"
     ]
+    @class_list.push("col-start-#{@x}", "row-start-#{@y}") if position
     @class_list << 'silhouette' if silhouette
   end
 

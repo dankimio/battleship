@@ -1,15 +1,15 @@
 class AircraftCarrierComponent < ShipComponent
   SIZE = 5
 
-  def initialize(direction:, position:, hits: [false, false, false, false, false], silhouette: false)
+  def initialize(direction:, position: nil, hits: [false, false, false, false, false], silhouette: false)
     super
 
-    if vertical?
+    if vertical? && position
       @class_list << 'col-span-1'
       @class_list << "row-span-#{SIZE}"
     end
 
-    if horizontal?
+    if horizontal? && position
       @class_list << 'row-span-1'
       @class_list << "col-span-#{SIZE}"
     end

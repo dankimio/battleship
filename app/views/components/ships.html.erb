@@ -88,145 +88,30 @@
 
     <p class="grid-header text-right">Cruiser (2)</p>
 
-    <div class="ship ship-vertical items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
-
-    <div class="ship ship-vertical silhouette items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
+    <%= render CruiserComponent.new(direction: :vertical) %>
+    <%= render CruiserComponent.new(direction: :vertical, silhouette: true) %>
 
     <p class="grid-header text-right">Destroyer (3)</p>
 
-    <div class="ship ship-vertical items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
+    <%= render DestroyerComponent.new(direction: :vertical) %>
+    <%= render DestroyerComponent.new(direction: :vertical, silhouette: true) %>
 
-    <div class="ship ship-vertical silhouette items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
 
     <p class="grid-header text-right">Submarine (3)</p>
 
-    <div class="ship ship-vertical items-center">
-      <div class="atom front-submarine">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
-
-    <div class="ship ship-vertical silhouette items-center">
-      <div class="atom front-submarine">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
+    <%= render SubmarineComponent.new(direction: :vertical) %>
+    <%= render SubmarineComponent.new(direction: :vertical, silhouette: true) %>
 
     <p class="grid-header text-right">Battleship (4)</p>
 
-    <div class="ship ship-vertical items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
+    <%= render BattleshipComponent.new(direction: :vertical) %>
+    <%= render BattleshipComponent.new(direction: :vertical, silhouette: true) %>
 
-    <div class="ship ship-vertical silhouette items-center">
-      <div class="atom front-default">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-default">
-        <div class="hit"></div>
-      </div>
-    </div>
 
     <p class="grid-header text-right">Aircraft carrier (5)</p>
 
-    <div class="ship ship-vertical items-center">
-      <div class="atom front-aircraft-carrier">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-aircraft-carrier">
-        <div class="hit"></div>
-      </div>
-    </div>
-
-    <div class="ship ship-vertical silhouette items-center">
-      <div class="atom front-aircraft-carrier">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom middle">
-        <div class="hit"></div>
-      </div>
-      <div class="atom back-aircraft-carrier">
-        <div class="hit"></div>
-      </div>
-    </div>
+    <%= render AircraftCarrierComponent.new(direction: :vertical) %>
+    <%= render AircraftCarrierComponent.new(direction: :vertical, silhouette: true) %>
   </div>
 
 </div>
