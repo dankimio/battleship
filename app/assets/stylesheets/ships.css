@@ -8,14 +8,38 @@
   */
   &.ship-vertical {
     @apply flex-col;
+
+    & .spacer {
+      @apply w-8;
+    }
   }
 
   &.ship-horizontal {
     @apply flex-row;
 
-    & .atom {
+    & .front-default,
+    & .front-aircraft-carrier,
+    & .front-submarine,
+    & .back-aircraft-carrier,
+    & .back-default {
       @apply rotate-90;
     }
+
+    & .spacer {
+      @apply h-8;
+    }
+  }
+
+  & .spacer {
+    @apply border;
+  }
+
+  & .spacer-between {
+    @apply border-gray-3;
+  }
+
+  & .spacer-edge {
+    @apply border-transparent;
   }
 }
 

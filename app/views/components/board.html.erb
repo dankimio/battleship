@@ -10,20 +10,8 @@
   <div class="flex flex-row mb-12">
     <%= render 'board_numbers' %>
 
-    <div class="board board-main">
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div class="board-atom"></div>
-      <div></div>
-
-      <% 9.times do %>
+    <div class="relative">
+      <div class="board board-main">
         <div class="board-atom"></div>
         <div class="board-atom"></div>
         <div class="board-atom"></div>
@@ -35,7 +23,54 @@
         <div class="board-atom"></div>
         <div class="board-atom"></div>
         <div></div>
-      <% end %>
+
+        <% 9.times do %>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div class="board-atom"></div>
+          <div></div>
+        <% end %>
+      </div>
+
+      <div class="absolute top-0 pointer-events-none">
+        <div class="board board-main">
+
+          <div class="ship ship-vertical items-center col-span-1  row-span-5 col-start-2 pointer-events-auto">
+            <div class="spacer spacer-edge"></div>
+            <div class="atom front-aircraft-carrier"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom back-aircraft-carrier"><div class="hit"></div></div>
+            <div class="spacer spacer-edge"></div>
+          </div>
+
+          <div class="ship ship-horizontal items-center col-span-5 row-span-1 row-start-2 col-start-4 pointer-events-auto">
+            <div class="spacer spacer-edge"></div>
+            <div class="atom back-aircraft-carrier"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom middle"><div class="hit"></div></div>
+            <div class="spacer spacer-between"></div>
+            <div class="atom front-default"><div class="hit"></div></div>
+            <div class="spacer spacer-edge"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

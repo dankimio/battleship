@@ -1,26 +1,28 @@
 .board-letters {
-  @apply grid gap-0.5 text-center;
+  @apply grid text-center;
 
-  grid-template-columns: 32px repeat(10, 32px) auto;
-  grid-template-rows: 32px;
+  grid-template-columns: 34px repeat(10, 34px) auto;
+  grid-template-rows: 34px;
 }
 
 .board-numbers {
-  @apply grid gap-0.5 text-center;
+  @apply grid text-center;
 
-  grid-template-columns: 32px;
-  grid-template-rows: repeat(10, 32px);
+  grid-template-columns: 34px;
+  grid-template-rows: repeat(10, 34px);
 }
 
 .board {
-  @apply grid gap-0.5 text-center;
+  @apply grid text-center;
 
-  grid-template-columns: repeat(10, 32px) auto;
-  grid-template-rows: repeat(10, 32px);
+  grid-template-columns: repeat(10, 34px) auto;
+  grid-template-rows: repeat(10, 34px);
 }
 
 .board-atom {
   @apply rounded;
+
+  margin: 2px;
 }
 
 .board-main {
