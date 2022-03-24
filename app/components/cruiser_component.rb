@@ -1,40 +1,21 @@
-class CruiserComponent < ViewComponent::Base
+class CruiserComponent < ShipComponent
   SIZE = 2
 
   def initialize(direction:, position:, hits:)
-    @direction = direction
-    @x, @y = position
-    @hits = hits
-  end
-
-  def classes
-    result = [
-      "col-start-#{@x}",
-      "row-start-#{@y}",
-      "ship-#{@direction}"
-    ]
-
-    "row-start-4"
-    "col-start-4"
+    super
 
     if vertical?
-      result << 'col-span-1'
-      result << "row-span-#{SIZE}"
+      @class_list << 'col-span-1'
+      @class_list << "row-span-#{SIZE}"
     end
 
     if horizontal?
-      result << 'row-span-1'
-      result << "col-span-#{SIZE}"
+      @class_list << 'row-span-1'
+      @class_list << "col-span-#{SIZE}"
     end
-
-    result.join(' ')
   end
 
-  def vertical?
-    @direction == :vertical
-  end
-
-  def horizontal?
-    @direction == :horizontal
+  def classes
+    @class_list.uniq.join(' ')
   end
 end
