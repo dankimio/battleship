@@ -1,0 +1,20 @@
+.board-letters {
+  @apply grid gap-0.5 text-center;
+
+  grid-template-columns: 32px repeat(10, 32px) auto;
+  grid-template-rows: 32px;
+}
+
+.board-numbers {
+  @apply grid gap-0.5 text-center;
+
+  grid-template-columns: 32px;
+  grid-template-rows: repeat(10, 32px);
+}
+
+.board {
+  @apply grid gap-0.5 text-center;
+
+  grid-template-columns: repeat(10, 32px) auto;
+  grid-template-rows: repeat(10, 32px);
+}
