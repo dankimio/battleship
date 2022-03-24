@@ -5,34 +5,10 @@
 
   <h2 class="header-1 mb-8">Board / grid</h2>
 
-  <div class="board-letters">
-    <div></div>
-    <div class="header-2 text-gray-2">A</div>
-    <div class="header-2 text-gray-2">B</div>
-    <div class="header-2 text-gray-2">C</div>
-    <div class="header-2 text-gray-2">D</div>
-    <div class="header-2 text-gray-2">E</div>
-    <div class="header-2 text-gray-2">F</div>
-    <div class="header-2 text-gray-2">G</div>
-    <div class="header-2 text-gray-2">H</div>
-    <div class="header-2 text-gray-2">I</div>
-    <div class="header-2 text-gray-2">J</div>
-    <div class="header-2 text-gray-2"></div>
-  </div>
+  <%= render 'board_letters' %>
 
   <div class="flex flex-row mb-12">
-    <div class="board-numbers">
-      <div class="my-auto header-2 text-gray-2">1</div>
-      <div class="my-auto header-2 text-gray-2">2</div>
-      <div class="my-auto header-2 text-gray-2">3</div>
-      <div class="my-auto header-2 text-gray-2">4</div>
-      <div class="my-auto header-2 text-gray-2">5</div>
-      <div class="my-auto header-2 text-gray-2">6</div>
-      <div class="my-auto header-2 text-gray-2">7</div>
-      <div class="my-auto header-2 text-gray-2">8</div>
-      <div class="my-auto header-2 text-gray-2">9</div>
-      <div class="my-auto header-2 text-gray-2">10</div>
-    </div>
+    <%= render 'board_numbers' %>
 
     <div class="board">
       <div class="board-atom"></div>
