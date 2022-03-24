@@ -18,3 +18,7 @@
   grid-template-columns: repeat(10, 32px) auto;
   grid-template-rows: repeat(10, 32px);
 }
+
+.board-atom {
+  @apply rounded bg-blue-3;
+}
