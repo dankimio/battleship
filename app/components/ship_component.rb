@@ -1,4 +1,6 @@
 class ShipComponent < ViewComponent::Base
+  attr_reader :hits
+
   def initialize(direction:, position: nil, hits:, silhouette:)
     @direction = direction
     @x, @y = position

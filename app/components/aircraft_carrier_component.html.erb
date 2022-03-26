@@ -1,13 +1,13 @@
 <div class="ship <%= classes %>">
   <div class="spacer spacer-edge"></div>
-  <%= render ShipAtomComponent.new('front-aircraft-carrier') %>
+  <%= render ShipAtomComponent.new('front-aircraft-carrier', hit: hits[0]) %>
   <div class="spacer spacer-between"></div>
-  <%= render ShipAtomComponent.new('middle') %>
+  <%= render ShipAtomComponent.new('middle', hit: hits[1]) %>
   <div class="spacer spacer-between"></div>
-  <%= render ShipAtomComponent.new('middle') %>
+  <%= render ShipAtomComponent.new('middle', hit: hits[2]) %>
   <div class="spacer spacer-between"></div>
-  <%= render ShipAtomComponent.new('middle') %>
+  <%= render ShipAtomComponent.new('middle', hit: hits[3]) %>
   <div class="spacer spacer-between"></div>
-  <%= render ShipAtomComponent.new('back-aircraft-carrier') %>
+  <%= render ShipAtomComponent.new('back-aircraft-carrier', hit: hits[4]) %>
   <div class="spacer spacer-edge"></div>
 </div>
