@@ -3,41 +3,43 @@
     <%= render TopbarComponent.new %>
   </div>
 
-  <div class="max-w-5xl mx-auto bg-white rounded-xl p-16">
-    <div class="flex flex-row justify-between gap-16">
-      <div class="flex-1 flex flex-col gap-8">
-        <div class="px-2">
-          <%= render BoardNameComponent.new(:main) %>
+  <div class="px-4">
+    <div class="max-w-5xl mx-auto bg-white rounded-xl p-16">
+      <div class="flex flex-row justify-between gap-16">
+        <div class="flex-1 flex flex-col gap-8">
+          <div class="px-2">
+            <%= render BoardNameComponent.new(:main) %>
+          </div>
+
+          <div class="mb-3">
+            <%= render BoardComponent.new(Board.empty(:main)) do %>
+              <%= render AircraftCarrierComponent.new direction: :vertical,
+                position: [7, 6],
+                hits: [true, true, true, true, true]
+              %>
+              <%= render BattleshipComponent.new(direction: :vertical, position: [9, 3])%>
+              <%= render SubmarineComponent.new(direction: :horizontal, position: [3, 6]) %>
+              <%= render DestroyerComponent.new(direction: :horizontal, position: [3, 2]) %>
+              <%= render CruiserComponent.new(direction: :vertical, position: [6, 3]) %>
+            <% end %>
+          </div>
+
+          <%= render ShipyardComponent.new %>
         </div>
 
-        <div class="mb-3">
-          <%= render BoardComponent.new(Board.empty(:main)) do %>
-            <%= render AircraftCarrierComponent.new direction: :vertical,
-              position: [7, 6],
-              hits: [true, true, true, true, true]
-            %>
-            <%= render BattleshipComponent.new(direction: :vertical, position: [9, 3])%>
-            <%= render SubmarineComponent.new(direction: :horizontal, position: [3, 6]) %>
-            <%= render DestroyerComponent.new(direction: :horizontal, position: [3, 2]) %>
-            <%= render CruiserComponent.new(direction: :vertical, position: [6, 3]) %>
-          <% end %>
+        <div class="border-l border-gray-5"></div>
+
+        <div class="flex-1 flex flex-col gap-8">
+          <div class="px-2">
+            <%= render BoardNameComponent.new(:opponent) %>
+          </div>
+
+          <div class="mb-3">
+            <%= render BoardComponent.new(Board.empty(:opponent)) %>
+          </div>
+
+          <%= render GraveyardComponent.new %>
         </div>
-
-        <%= render ShipyardComponent.new %>
-      </div>
-
-      <div class="border-l border-gray-5"></div>
-
-      <div class="flex-1 flex flex-col gap-8">
-        <div class="px-2">
-          <%= render BoardNameComponent.new(:opponent) %>
-        </div>
-
-        <div class="mb-3">
-          <%= render BoardComponent.new(Board.empty(:opponent)) %>
-        </div>
-
-        <%= render GraveyardComponent.new %>
       </div>
     </div>
   </div>
