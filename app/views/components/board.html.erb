@@ -64,21 +64,25 @@
 
   <h2 class="header-1 mb-8">Shipyard</h2>
 
-  <%= render ShipyardComponent.new %>
+  <div class="mb-12">
+    <%= render ShipyardComponent.new %>
+  </div>
 
-  <div class="mb-12 flex flex-row items-center gap-4">
-    <p class="uppercase font-semibold text-xs text-gray-0" style="writing-mode: vertical-lr">
-      Shipyard
-    </p>
-    <div class="flex flex-col gap-2">
-      <div class="flex flex-row gap-2">
-        <%= render BattleshipComponent.new(direction: :horizontal, silhouette: true) %>
-        <%= render SubmarineComponent.new(direction: :horizontal, silhouette: true) %>
-        <%= render CruiserComponent.new(direction: :horizontal, silhouette: true) %>
-      </div>
-      <div class="flex flex-row gap-2">
-        <%= render AircraftCarrierComponent.new(direction: :horizontal, silhouette: true) %>
-        <%= render DestroyerComponent.new(direction: :horizontal, silhouette: true) %>
+  <div class="mb-12">
+    <div class="flex flex-row items-center gap-4">
+      <p class="uppercase font-semibold text-xs text-gray-0" style="writing-mode: vertical-lr">
+        Shipyard
+      </p>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-row gap-2">
+          <%= render BattleshipComponent.new(direction: :horizontal, silhouette: true) %>
+          <%= render SubmarineComponent.new(direction: :horizontal, silhouette: true) %>
+          <%= render CruiserComponent.new(direction: :horizontal, silhouette: true) %>
+        </div>
+        <div class="flex flex-row gap-2">
+          <%= render AircraftCarrierComponent.new(direction: :horizontal, silhouette: true) %>
+          <%= render DestroyerComponent.new(direction: :horizontal, silhouette: true) %>
+        </div>
       </div>
     </div>
   </div>
