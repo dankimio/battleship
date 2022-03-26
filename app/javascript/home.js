@@ -1,11 +1,4 @@
-/**
- * Sample n items from the array
- * @param {Array} list
- * @param {number} numberOfElements
- */
-function sample(list, numberOfElements) {
-  return Array(numberOfElements).fill().map(_ => list[Math.floor(Math.random() * list.length)])
-}
+import sample from './helpers/sample'
 
 document.addEventListener('DOMContentLoaded', () => {
   const mainPlayerAtoms = document.querySelectorAll('#home .board-main .board-atom')
