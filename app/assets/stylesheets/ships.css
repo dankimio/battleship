@@ -75,7 +75,7 @@
     }
   }
 
-  &.atom-hit {
+  &.hit {
     & .nucleus {
       @apply bg-red-0 ring-2 ring-red-0;
     }
