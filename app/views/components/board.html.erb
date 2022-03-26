@@ -12,9 +12,7 @@
 
     <div class="relative">
       <div class="board board-main">
-        <% 10.times do %>
-          <%= render BoardRowComponent.new %>
-        <% end %>
+        <%= render BoardComponent.new(Board.empty(:main)) %>
       </div>
 
       <%# Main player: ships %>
@@ -38,9 +36,7 @@
     <%= render 'board_numbers' %>
 
     <div class="board board-opponent">
-      <% 10.times do %>
-        <%= render BoardRowComponent.new %>
-      <% end %>
+      <%= render BoardComponent.new(Board.empty(:main)) %>
     </div>
   </div>
 
