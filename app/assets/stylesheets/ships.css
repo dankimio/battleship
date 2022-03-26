@@ -64,7 +64,7 @@
   @apply w-8 h-8 flex items-center justify-center bg-gray-3;
 
   & .nucleus {
-    @apply rounded-full w-3 h-3 bg-gray-2;
+    @apply rounded-full w-3 h-3 bg-gray-2 transition-colors duration-75;
   }
 
   &:hover, &.hover {

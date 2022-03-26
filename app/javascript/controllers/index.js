@@ -9,3 +9,6 @@ application.register("board-atom", BoardAtomController)
 
 import HelloController from "./hello_controller.js"
 application.register("hello", HelloController)
+
+import ShipAtomController from "./ship_atom_controller.js"
+application.register("ship-atom", ShipAtomController)
