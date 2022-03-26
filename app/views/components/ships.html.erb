@@ -1,81 +1,45 @@
-<div class="container mx-auto px-8 py-8">
+<div class="container px-8 py-8">
   <h1 class="text-5xl font-bold mb-8">Ships</h1>
 
   <%= render 'navigation' %>
 
   <h2 class="header-1 mb-8">Ships / atom</h2>
 
-  <div class="grid gap-y-10 gap-x-12 mb-12" style="grid-template-columns: 150px 50px 50px 50px">
+  <div class="components-grid grid gap-y-10 gap-x-12 mb-12" style="grid-template-columns: 150px 50px 50px 50px">
     <p></p>
     <p class="grid-header text-center">Default</p>
     <p class="grid-header text-center">Hover</p>
     <p class="grid-header text-center">Hit</p>
 
     <p class="grid-header text-right">Front default</p>
-    <div class="atom front-default mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-default hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-default hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('front-default') %>
+    <%= render ShipAtomComponent.new('front-default', hover: true) %>
+    <%= render ShipAtomComponent.new('front-default', hit: true) %>
 
     <p class="grid-header text-right">Front Aircraft carrier</p>
-    <div class="atom front-aircraft-carrier mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-aircraft-carrier hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-aircraft-carrier hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('front-aircraft-carrier') %>
+    <%= render ShipAtomComponent.new('front-aircraft-carrier', hover: true) %>
+    <%= render ShipAtomComponent.new('front-aircraft-carrier', hit: true) %>
 
     <p class="grid-header text-right">Front Submarine</p>
-    <div class="atom front-submarine mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-submarine hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom front-submarine hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('front-submarine') %>
+    <%= render ShipAtomComponent.new('front-submarine', hover: true) %>
+    <%= render ShipAtomComponent.new('front-submarine', hit: true) %>
 
     <p class="grid-header text-right">Middle</p>
-    <div class="atom middle mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom middle hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom middle hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('middle') %>
+    <%= render ShipAtomComponent.new('middle', hover: true) %>
+    <%= render ShipAtomComponent.new('middle', hit: true) %>
 
     <p class="grid-header text-right">Back aircraft carrier</p>
-    <div class="atom back-aircraft-carrier mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom back-aircraft-carrier hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom back-aircraft-carrier hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('back-aircraft-carrier') %>
+    <%= render ShipAtomComponent.new('back-aircraft-carrier', hover: true) %>
+    <%= render ShipAtomComponent.new('back-aircraft-carrier', hit: true) %>
 
     <p class="grid-header text-right">Back default</p>
-    <div class="atom back-default mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom back-default hover mx-auto">
-      <div class="nucleus"></div>
-    </div>
-    <div class="atom back-default hit mx-auto">
-      <div class="nucleus"></div>
-    </div>
+    <%= render ShipAtomComponent.new('back-default') %>
+    <%= render ShipAtomComponent.new('back-default', hover: true) %>
+    <%= render ShipAtomComponent.new('back-default', hit: true) %>
   </div>
 
 

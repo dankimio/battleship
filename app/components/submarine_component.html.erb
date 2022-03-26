@@ -1,9 +1,9 @@
 <div class="ship <%= classes %>">
   <div class="spacer spacer-edge"></div>
-  <div class="atom front-submarine"><div class="nucleus"></div></div>
+  <%= render ShipAtomComponent.new('front-submarine') %>
   <%# <div class="spacer spacer-between"></div> %>
-  <div class="atom middle"><div class="nucleus"></div></div>
+  <%= render ShipAtomComponent.new('middle') %>
   <%# <div class="spacer spacer-between"></div> %>
-  <div class="atom back-default"><div class="nucleus"></div></div>
+  <%= render ShipAtomComponent.new('back-default') %>
   <div class="spacer spacer-edge"></div>
 </div>
