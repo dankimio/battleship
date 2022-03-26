@@ -50,6 +50,12 @@
     }
 
     &.miss::before {
+      @apply bg-gray-3 w-4 h-4 rounded-full;
+
+      content: '';
+    }
+
+    &.hit::before {
       @apply bg-red-0 w-4 h-4 rounded-full;
 
       content: '';
