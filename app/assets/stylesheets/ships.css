@@ -41,12 +41,12 @@
     & .atom {
       @apply bg-gray-6;
 
-      & .hit {
+      & .nucleus {
         @apply bg-gray-3;
       }
 
       &:hover {
-        & .hit {
+        & .nucleus {
           @apply ring-0;
         }
       }
@@ -61,20 +61,20 @@
 .atom {
   @apply w-8 h-8 flex items-center justify-center bg-gray-3;
 
-  & .hit {
+  & .nucleus {
     @apply rounded-full w-3 h-3 bg-gray-2;
   }
 
   &:hover, &.hover {
     @apply cursor-pointer;
 
-    & .hit {
+    & .nucleus {
       @apply ring-2 ring-gray-1;
     }
   }
 
   &.atom-hit {
-    & .hit {
+    & .nucleus {
       @apply bg-red-0 ring-2 ring-red-0;
     }
   }
