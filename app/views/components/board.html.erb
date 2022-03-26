@@ -94,11 +94,11 @@
 
   <h2 class="header-1 mb-8">Board / name</h2>
 
-  <div class="w-96 board-name board-name-main mb-4">
-    Your fleet
+  <div class="w-96 mb-4">
+    <%= render BoardNameComponent.new(:main) %>
   </div>
 
-  <div class="w-96 board-name board-name-opponent">
-    Your fleet
+  <div class="w-96 mb-4">
+    <%= render BoardNameComponent.new(:opponent) %>
   </div>
 </div>

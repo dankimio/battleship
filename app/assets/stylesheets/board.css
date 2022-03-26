@@ -70,11 +70,11 @@
 .board-name {
   @apply rounded py-3 header-3 text-white text-center align-middle;
 
-  &.board-name-main {
+  &.main {
     @apply bg-blue-0;
   }
 
-  &.board-name-opponent {
+  &.opponent {
     @apply bg-gray-2;
   }
 }
