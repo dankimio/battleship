@@ -38,7 +38,7 @@
   }
 
   &.silhouette {
-    & .atom {
+    & .ship-atom {
       @apply bg-gray-6;
 
       & .nucleus {
@@ -60,7 +60,7 @@
   }
 }
 
-.atom {
+.ship-atom {
   @apply w-8 h-8 flex items-center justify-center bg-gray-3;
 
   & .nucleus {
