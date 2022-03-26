@@ -11,9 +11,7 @@
     <%= render 'board_numbers' %>
 
     <div class="relative">
-      <div class="board board-main">
-        <%= render BoardComponent.new(Board.empty(:main)) %>
-      </div>
+      <%= render BoardComponent.new(Board.empty(:main)) %>
 
       <%# Main player: ships %>
       <div class="absolute top-0 pointer-events-none">
@@ -35,9 +33,7 @@
   <div class="flex flex-row mb-12">
     <%= render 'board_numbers' %>
 
-    <div class="board board-opponent">
-      <%= render BoardComponent.new(Board.empty(:main)) %>
-    </div>
+    <%= render BoardComponent.new(Board.empty(:opponent)) %>
   </div>
 
   <h2 class="header-1 mb-8">Shipyard</h2>
