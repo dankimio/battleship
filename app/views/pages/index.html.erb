@@ -4,22 +4,30 @@
   </div>
 
   <div class="max-w-5xl mx-auto bg-white rounded-xl p-16">
-    <div class="flex flex-row justify-between gap-14">
+    <div class="flex flex-row justify-between gap-16">
       <div class="flex-1 flex flex-col gap-8">
-        <%= render BoardNameComponent.new(:main) %>
-        <div>
+        <div class="px-2">
+          <%= render BoardNameComponent.new(:main) %>
+        </div>
+
+        <div class="mb-3">
           <%= render BoardComponent.new(Board.empty(:opponent)) %>
         </div>
+
         <%= render ShipyardComponent.new %>
       </div>
 
       <div class="border-l border-gray-5"></div>
 
       <div class="flex-1 flex flex-col gap-8">
-        <%= render BoardNameComponent.new(:opponent) %>
-        <div>
+        <div class="px-2">
+          <%= render BoardNameComponent.new(:opponent) %>
+        </div>
+
+        <div class="mb-3">
           <%= render BoardComponent.new(Board.empty(:opponent)) %>
         </div>
+
         <%= render GraveyardComponent.new %>
       </div>
     </div>
