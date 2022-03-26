@@ -48,6 +48,12 @@
     &:hover {
       @apply bg-gray-4;
     }
+
+    &.miss::before {
+      @apply bg-red-0 w-4 h-4 rounded-full;
+
+      content: '';
+    }
   }
 }
 
