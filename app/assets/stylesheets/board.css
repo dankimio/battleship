@@ -20,7 +20,7 @@
 }
 
 .board-atom {
-  @apply rounded;
+  @apply rounded flex items-center justify-center;
 
   margin: 2px;
 }
@@ -31,6 +31,12 @@
 
     &:hover {
       @apply bg-blue-2;
+    }
+
+    &.miss::before {
+      @apply bg-blue-2 w-4 h-4 rounded-full;
+
+      content: '';
     }
   }
 }
