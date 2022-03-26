@@ -20,7 +20,7 @@
 }
 
 .board-atom {
-  @apply rounded flex items-center justify-center;
+  @apply rounded flex items-center justify-center transition-colors;
 
   margin: 2px;
 }
