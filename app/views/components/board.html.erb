@@ -46,17 +46,21 @@
 
   <h2 class="header-1 mb-8">Board / grid</h2>
 
-  <%= render BoardComponent.new(Board.empty(:main)) do %>
-    <%= render AircraftCarrierComponent.new(direction: :vertical, position: [2, 1]) %>
-    <%= render CruiserComponent.new(direction: :horizontal, position: [4, 4]) %>
-    <%= render DestroyerComponent.new(direction: :vertical, position: [6, 6]) %>
-    <%= render DestroyerComponent.new(direction: :horizontal, position: [1, 7]) %>
-    <%= render SubmarineComponent.new(direction: :horizontal, position: [1, 9]) %>
-    <%= render BattleshipComponent.new(direction: :horizontal, position: [5, 10]) %>
-    <%= render AircraftCarrierComponent.new(direction: :horizontal, position: [4, 2]) %>
-  <% end %>
+  <div class="mb-12">
+    <%= render BoardComponent.new(Board.empty(:main)) do %>
+      <%= render AircraftCarrierComponent.new(direction: :vertical, position: [2, 1]) %>
+      <%= render CruiserComponent.new(direction: :horizontal, position: [4, 4]) %>
+      <%= render DestroyerComponent.new(direction: :vertical, position: [6, 6]) %>
+      <%= render DestroyerComponent.new(direction: :horizontal, position: [1, 7]) %>
+      <%= render SubmarineComponent.new(direction: :horizontal, position: [1, 9]) %>
+      <%= render BattleshipComponent.new(direction: :horizontal, position: [5, 10]) %>
+      <%= render AircraftCarrierComponent.new(direction: :horizontal, position: [4, 2]) %>
+    <% end %>
+  </div>
 
-  <%= render BoardComponent.new(Board.empty(:opponent)) %>
+  <div class="mb-12">
+    <%= render BoardComponent.new(Board.empty(:opponent)) %>
+  </div>
 
   <h2 class="header-1 mb-8">Shipyard</h2>
 
