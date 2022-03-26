@@ -13,16 +13,16 @@
     <div class="relative">
       <div class="board board-main">
         <% 10.times do %>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
-          <div class="board-atom"></div>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
+          <%= render BoardAtomComponent.new %>
           <div></div>
         <% end %>
       </div>
@@ -49,16 +49,16 @@
 
     <div class="board board-opponent">
       <% 10.times do %>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
-        <div class="board-atom"></div>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
+        <%= render BoardAtomComponent.new %>
         <div></div>
       <% end %>
     </div>
