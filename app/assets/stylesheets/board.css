@@ -29,7 +29,7 @@
   & .board-atom {
     @apply bg-blue-3;
 
-    &:hover {
+    &:hover, &.hover {
       @apply bg-blue-2;
 
       &.miss::before {
@@ -49,7 +49,7 @@
   & .board-atom {
     @apply bg-gray-5;
 
-    &:hover {
+    &:hover, &.hover {
       @apply bg-gray-4;
     }
 

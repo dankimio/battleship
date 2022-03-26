@@ -3,6 +3,47 @@
 
   <%= render 'navigation' %>
 
+  <h2 class="header-1 mb-8">Board / grid / atom</h2>
+
+  <div id="board-atoms" class="components-grid grid gap-y-10 gap-x-12 mb-12"
+    style="grid-template-columns: 50px 75px 75px"
+  >
+    <p></p>
+    <p class="grid-header text-center">Main player</p>
+    <p class="grid-header text-center">Opponent</p>
+
+    <p class="grid-header text-right">Default</p>
+    <div class="board-main grid">
+      <%= render BoardAtomComponent.new %>
+    </div>
+    <div class="board-opponent grid">
+      <%= render BoardAtomComponent.new %>
+    </div>
+
+    <p class="grid-header text-right">Hover</p>
+    <div class="board-main grid">
+      <%= render BoardAtomComponent.new(hover: true) %>
+    </div>
+    <div class="board-opponent grid">
+      <%= render BoardAtomComponent.new(hover: true) %>
+    </div>
+
+    <p class="grid-header text-right">Miss</p>
+    <div class="board-main grid">
+      <%= render BoardAtomComponent.new(false) %>
+    </div>
+    <div class="board-opponent grid">
+      <%= render BoardAtomComponent.new(false) %>
+    </div>
+
+    <p class="grid-header text-right">Hit</p>
+    <div class="board-main grid">
+    </div>
+    <div class="board-opponent grid">
+      <%= render BoardAtomComponent.new(true) %>
+    </div>
+  </div>
+
   <h2 class="header-1 mb-8">Board / grid</h2>
 
   <%= render BoardComponent.new(Board.empty(:main)) do %>

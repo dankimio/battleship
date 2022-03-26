@@ -2,4 +2,10 @@
   & div {
     @apply mx-auto;
   }
+
+  &#board-atoms {
+    & .board-atom {
+      @apply w-8 h-8;
+    }
+  }
 }
