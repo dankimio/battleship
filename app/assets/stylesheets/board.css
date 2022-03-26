@@ -17,6 +17,10 @@
 
   grid-template-columns: repeat(10, 34px) auto;
   grid-template-rows: repeat(10, 34px);
+
+  & .ship {
+    @apply mx-auto my-auto;
+  }
 }
 
 .board-atom {
