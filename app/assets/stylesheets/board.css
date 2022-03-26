@@ -31,6 +31,10 @@
 
     &:hover {
       @apply bg-blue-2;
+
+      &.miss::before {
+        @apply bg-gray-4;
+      }
     }
 
     &.miss::before {
