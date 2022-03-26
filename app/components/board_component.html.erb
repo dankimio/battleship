@@ -1,5 +1,19 @@
-<div class="board <%= classes %>">
-  <% rows.each do |row| %>
-    <%= render BoardRowComponent.new(row) %>
-  <% end %>
+<%= render 'board_letters' %>
+<div class="flex flex-row mb-12">
+  <%= render 'board_numbers' %>
+
+  <div class="relative">
+    <div class="board <%= classes %>">
+      <% rows.each do |row| %>
+        <%= render BoardRowComponent.new(row) %>
+      <% end %>
+
+      <!-- Ships -->
+      <div class="absolute top-0 pointer-events-none">
+        <div class="board <%= classes %>">
+          <%= content %>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
