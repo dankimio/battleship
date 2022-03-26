@@ -46,6 +46,8 @@
       }
 
       &:hover {
+        @apply cursor-auto;
+
         & .nucleus {
           @apply ring-0;
         }
