@@ -13,17 +13,7 @@
     <div class="relative">
       <div class="board board-main">
         <% 10.times do %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <%= render BoardAtomComponent.new %>
-          <div></div>
+          <%= render BoardRowComponent.new %>
         <% end %>
       </div>
 
@@ -49,17 +39,7 @@
 
     <div class="board board-opponent">
       <% 10.times do %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <%= render BoardAtomComponent.new %>
-        <div></div>
+        <%= render BoardRowComponent.new %>
       <% end %>
     </div>
   </div>
