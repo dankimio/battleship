@@ -1,13 +1,15 @@
 class BoardAtomComponent < ViewComponent::Base
-  def initialize(miss: false, hit: false)
-    @miss = miss
-    @hit = hit
+  STATES = {
+    nil => '',
+    false => 'miss',
+    true => 'hit'
+  }
+
+  def initialize(state = nil)
+    @state = state
   end
 
   def classes
-    result = []
-    result << 'miss' if @miss
-    result << 'hit' if @hit
-    result.join(' ')
+    STATES[@state]
   end
 end

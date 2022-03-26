@@ -1,5 +1,5 @@
 <div class="board <%= classes %>">
-  <% 10.times do %>
-    <%= render BoardRowComponent.new %>
+  <% rows.each do |row| %>
+    <%= render BoardRowComponent.new(row) %>
   <% end %>
 </div>

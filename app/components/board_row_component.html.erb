@@ -1,13 +1,6 @@
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
-<%= render BoardAtomComponent.new %>
+<% @board_atoms.each do |board_atom| %>
+  <%= render BoardAtomComponent.new(board_atom) %>
+<% end %>
 
 <!-- This is a spacer block that will take up remaining horizontal space -->
 <div></div>
