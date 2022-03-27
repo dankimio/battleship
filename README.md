@@ -5,3 +5,18 @@
 * Configuration
 * Database initialization: `$ rails db:setup`
 * How to run the test suite: `$ rails test`
+
+## To-Do
+
+- [x] Seed random hits and misses
+- [x] Deploy
+- [ ] Set up ESLint
+- [ ] Set up RuboCop
+- [ ] Add tests
+- [ ] Hit animation
+- [ ] Add link to components storybook
+- [ ] Test on mobile
+- [ ] Add docs and update README
+- [ ] Add LICENSE
+- [ ] Add page titles
+- [ ] Validate HTML and CSS; Lighthouse, etc.
