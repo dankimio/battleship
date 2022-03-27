@@ -1,6 +1,6 @@
 import sample from './helpers/sample'
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('turbo:load', () => {
   const mainPlayerAtoms = document.querySelectorAll('#home .board-main .board-atom')
   sample(mainPlayerAtoms, 10).forEach(atom => atom.classList.toggle('miss'))
 
