@@ -2,13 +2,13 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+import { application } from './application'
 
-import BoardAtomController from "./board_atom_controller.js"
-application.register("board-atom", BoardAtomController)
+import BoardAtomController from './board_atom_controller.js'
 
-import HelloController from "./hello_controller.js"
-application.register("hello", HelloController)
+import HelloController from './hello_controller.js'
 
-import ShipAtomController from "./ship_atom_controller.js"
-application.register("ship-atom", ShipAtomController)
+import ShipAtomController from './ship_atom_controller.js'
+application.register('board-atom', BoardAtomController)
+application.register('hello', HelloController)
+application.register('ship-atom', ShipAtomController)
