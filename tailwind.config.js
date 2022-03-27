@@ -16,22 +16,22 @@ module.exports = {
     },
     {
       pattern: /(col|row)-span-(1|2|3|4|5)/
-    },
+    }
   ],
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
+        sans: ['Source Sans Pro', ...defaultTheme.fontFamily.sans]
       },
       gridColStart: {
-        '8': '8',
-        '9': '9',
-        '10': '10',
+        8: '8',
+        9: '9',
+        10: '10'
       },
       gridRowStart: {
-        '8': '8',
-        '9': '9',
-        '10': '10',
+        8: '8',
+        9: '9',
+        10: '10'
       }
     },
     colors: {
@@ -46,18 +46,18 @@ module.exports = {
         3: '#D4D4D4',
         4: '#DEDEDE',
         5: '#EFEFEF',
-        6: '#F6F6F6',
+        6: '#F6F6F6'
       },
       blue: {
         0: '#345BFF',
         1: '#A4B4F5',
         2: '#E5EAFF',
-        3: '#EFF2FF',
+        3: '#EFF2FF'
       },
       red: {
-        0: '#FF344C',
+        0: '#FF344C'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }
