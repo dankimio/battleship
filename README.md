@@ -1,10 +1,14 @@
 # Battleship
 
-* Ruby version: 3.1
-* System dependencies: `$ brew install postgresql`
-* Configuration
-* Database initialization: `$ rails db:setup`
-* How to run the test suite: `$ rails test`
+- Ruby version: 3.1
+- System dependencies: `$ brew install postgresql`
+- Configuration
+- Database initialization: `$ rails db:setup`
+- How to run the test suite: `$ rails test`
+
+## Notes
+
+- Board atom hits and misses are generated randomly on page load (see `app/javascript/home.js`) for code brevity and readability. Alternatively, they could be populated with back-end data (see `app/models/board.rb` and `app/components/board_component.rb`).
 
 ## To-Do
 
