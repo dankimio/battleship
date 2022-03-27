@@ -11,7 +11,7 @@
 - [x] Seed random hits and misses
 - [x] Deploy
 - [x] Add link to components storybook
-- [ ] Set up ESLint
+- [x] Set up ESLint
 - [ ] Set up RuboCop
 - [ ] Add tests
 - [ ] Hit animation
