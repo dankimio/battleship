@@ -2,7 +2,7 @@ class BoardNameComponent < ViewComponent::Base
   NAME = {
     main: 'Your fleet',
     opponent: 'Opponent'
-  }
+  }.freeze
   # player_type: :main, :opponent
   def initialize(player_type)
     @player_type = player_type

@@ -12,7 +12,7 @@
 - [x] Deploy
 - [x] Add link to components storybook
 - [x] Set up ESLint
-- [ ] Set up RuboCop
+- [x] Set up RuboCop
 - [ ] Add tests
 - [ ] Hit animation
 - [ ] Test on mobile

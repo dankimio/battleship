@@ -1,6 +1,6 @@
 class Board
   SIZE = 10
-  PLAYER_TYPES = %i[main opponent]
+  PLAYER_TYPES = %i[main opponent].freeze
 
   attr_reader :player_type, :rows
 

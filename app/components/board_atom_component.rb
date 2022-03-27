@@ -3,7 +3,7 @@ class BoardAtomComponent < ViewComponent::Base
     nil => '',
     false => 'miss',
     true => 'hit'
-  }
+  }.freeze
 
   def initialize(state = nil, hover: false)
     @state = state
