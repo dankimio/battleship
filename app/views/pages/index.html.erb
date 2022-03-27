@@ -1,9 +1,9 @@
-<div id="home" class="bg-gray-6 h-screen">
+<div id="home" class="bg-gray-6 min-h-screen pb-16">
   <div class="mb-12">
     <%= render TopbarComponent.new %>
   </div>
 
-  <div class="px-4">
+  <div class="px-4 mb-12">
     <div class="max-w-5xl mx-auto bg-white rounded-xl p-8 md:p-16">
       <div class="flex flex-col lg:flex-row justify-between gap-12 md:gap-16">
         <div class="flex-1 flex flex-col gap-8 items-center">
@@ -46,5 +46,12 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="px-4 text-center text-gray-1">
+    <%= link_to 'Components',
+      components_path,
+      class: 'hover:underline hover:text-gray-0'
+    %>
   </div>
 </div>

@@ -10,11 +10,11 @@
 
 - [x] Seed random hits and misses
 - [x] Deploy
+- [x] Add link to components storybook
 - [ ] Set up ESLint
 - [ ] Set up RuboCop
 - [ ] Add tests
 - [ ] Hit animation
-- [ ] Add link to components storybook
 - [ ] Test on mobile
 - [ ] Add docs and update README
 - [ ] Add LICENSE
