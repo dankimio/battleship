@@ -1,5 +1,7 @@
 # Battleship
 
+[Live](https://battleship.dan.kim) | [Components](https://battleship.dan.kim/components)
+
 ![Screenshot](./screenshot.png)
 
 - Ruby version: 3.1
