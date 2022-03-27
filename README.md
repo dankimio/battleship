@@ -13,10 +13,10 @@
 - [x] Add link to components storybook
 - [x] Set up ESLint
 - [x] Set up RuboCop
+- [x] Add LICENSE
 - [ ] Add tests
 - [ ] Hit animation
 - [ ] Test on mobile
 - [ ] Add docs and update README
-- [ ] Add LICENSE
 - [ ] Add page titles
 - [ ] Validate HTML and CSS; Lighthouse, etc.
