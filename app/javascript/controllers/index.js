@@ -5,10 +5,7 @@
 import { application } from './application'
 
 import BoardAtomController from './board_atom_controller.js'
-
-import HelloController from './hello_controller.js'
-
 import ShipAtomController from './ship_atom_controller.js'
+
 application.register('board-atom', BoardAtomController)
-application.register('hello', HelloController)
 application.register('ship-atom', ShipAtomController)
