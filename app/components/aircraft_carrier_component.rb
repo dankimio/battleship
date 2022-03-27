@@ -1,7 +1,7 @@
 class AircraftCarrierComponent < ShipComponent
   SIZE = 5
 
-  def initialize(direction:, position: nil, hits: [false, false, false, false, false], silhouette: false)
+  def initialize(direction:, position: nil, hits: Array.new(5, false), silhouette: false)
     super
 
     if vertical? && position

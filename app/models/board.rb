@@ -11,10 +11,12 @@ class Board
   # - true: hit
   def initialize(player_type, rows)
     raise ArgumentError unless player_type.in?(PLAYER_TYPES)
+
     @player_type = player_type
 
     raise ArgumentError unless rows.size == SIZE
     raise ArgumentError unless rows.flatten.size == SIZE * SIZE
+
     @rows = rows
   end
 
