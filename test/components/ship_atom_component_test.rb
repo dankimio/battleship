@@ -15,7 +15,7 @@ class ShipAtomComponentTest < ViewComponent::TestCase
     end
   end
 
-  test 'should nucleus to display hit state' do
+  test 'should render nucleus to display hit state' do
     assert_selector('.ship-atom .nucleus')
   end
 
