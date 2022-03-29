@@ -6,7 +6,7 @@ class ShipAtomComponent < ViewComponent::Base
     middle
     back-aircraft-carrier
     back-default
-  ]
+  ].freeze
 
   def initialize(type, hover: false, hit: false)
     raise ArgumentError unless TYPES.include?(type)

@@ -5,9 +5,9 @@ class ShipComponent < ViewComponent::Base
     cruiser: 2,
     destroyer: 3,
     submarine: 3
-  }
+  }.freeze
 
-  TYPES = %i[aircraft_carrier battleship cruiser destroyer submarine]
+  TYPES = %i[aircraft_carrier battleship cruiser destroyer submarine].freeze
 
   attr_reader :hits
 
@@ -20,6 +20,7 @@ class ShipComponent < ViewComponent::Base
     @x, @y = position
 
     raise ArgumentError unless TYPES.include?(type)
+
     @type = type
 
     @hits = Array.new(size, false) if hits.blank?
