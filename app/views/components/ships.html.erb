@@ -52,30 +52,30 @@
 
     <p class="grid-header text-right">Cruiser (2)</p>
 
-    <%= render CruiserComponent.new(direction: :vertical) %>
-    <%= render CruiserComponent.new(direction: :vertical, silhouette: true) %>
+    <%= render ShipComponent.new(type: :cruiser, direction: :vertical).with_variant(:cruiser) %>
+    <%= render ShipComponent.new(type: :cruiser, direction: :vertical, silhouette: true).with_variant(:cruiser) %>
 
     <p class="grid-header text-right">Destroyer (3)</p>
 
-    <%= render DestroyerComponent.new(direction: :vertical) %>
-    <%= render DestroyerComponent.new(direction: :vertical, silhouette: true) %>
+    <%= render ShipComponent.new(type: :destroyer, direction: :vertical).with_variant(:destroyer) %>
+    <%= render ShipComponent.new(type: :destroyer, direction: :vertical, silhouette: true).with_variant(:destroyer) %>
 
 
     <p class="grid-header text-right">Submarine (3)</p>
 
-    <%= render SubmarineComponent.new(direction: :vertical) %>
-    <%= render SubmarineComponent.new(direction: :vertical, silhouette: true) %>
+    <%= render ShipComponent.new(type: :submarine, direction: :vertical).with_variant(:submarine) %>
+    <%= render ShipComponent.new(type: :submarine, direction: :vertical, silhouette: true).with_variant(:submarine) %>
 
     <p class="grid-header text-right">Battleship (4)</p>
 
-    <%= render BattleshipComponent.new(direction: :vertical) %>
-    <%= render BattleshipComponent.new(direction: :vertical, silhouette: true) %>
+    <%= render ShipComponent.new(type: :battleship, direction: :vertical).with_variant(:battleship) %>
+    <%= render ShipComponent.new(type: :battleship, direction: :vertical, silhouette: true).with_variant(:battleship) %>
 
 
     <p class="grid-header text-right">Aircraft carrier (5)</p>
 
-    <%= render AircraftCarrierComponent.new(direction: :vertical) %>
-    <%= render AircraftCarrierComponent.new(direction: :vertical, silhouette: true) %>
+    <%= render ShipComponent.new(type: :aircraft_carrier, direction: :vertical).with_variant(:aircraft_carrier) %>
+    <%= render ShipComponent.new(type: :aircraft_carrier, direction: :vertical, silhouette: true).with_variant(:aircraft_carrier) %>
   </div>
 
 </div>

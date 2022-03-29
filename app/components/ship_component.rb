@@ -1,9 +1,19 @@
 class ShipComponent < ViewComponent::Base
+  SHIP_SIZES = {
+    aircraft_carrier: 5,
+    battleship: 4,
+    cruiser: 2,
+    destroyer: 3,
+    submarine: 3
+  }
+
   attr_reader :hits
 
-  def initialize(direction:, hits:, silhouette:, position: nil)
+  def initialize(direction:, hits: [], silhouette: false, position: nil, type: :aircraft_carrier)
     @direction = direction
     @x, @y = position
+    @type = type
+    @hits = Array.new(size, false) if hits.blank?
 
     # Horizontal ships are rendered from left to right.
     # Vertical ships are rendered bottom to top,
@@ -16,10 +26,20 @@ class ShipComponent < ViewComponent::Base
     ]
     @class_list.push("col-start-#{@x}", "row-start-#{@y}") if position
     @class_list << 'silhouette' if silhouette
+
+    if vertical? && position
+      @class_list << 'col-span-1'
+      @class_list << "row-span-#{size}"
+    end
+
+    if horizontal? && position
+      @class_list << 'row-span-1'
+      @class_list << "col-span-#{size}"
+    end
   end
 
   def classes
-    raise NoMethodError
+    @class_list.uniq.join(' ')
   end
 
   def vertical?
@@ -28,5 +48,9 @@ class ShipComponent < ViewComponent::Base
 
   def horizontal?
     @direction == :horizontal
+  end
+
+  def size
+    SHIP_SIZES[@type]
   end
 end

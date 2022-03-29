@@ -4,13 +4,13 @@
   </p>
   <div class="flex flex-col gap-2">
     <div class="flex flex-row gap-2">
-      <%= render BattleshipComponent.new(direction: :horizontal) %>
-      <%= render SubmarineComponent.new(direction: :horizontal) %>
-      <%= render CruiserComponent.new(direction: :horizontal) %>
+      <%= render ShipComponent.new(type: :battleship, direction: :horizontal).with_variant(:battleship) %>
+      <%= render ShipComponent.new(type: :submarine, direction: :horizontal).with_variant(:submarine) %>
+      <%= render ShipComponent.new(type: :cruiser, direction: :horizontal).with_variant(:cruiser) %>
     </div>
     <div class="flex flex-row gap-2">
-      <%= render AircraftCarrierComponent.new(direction: :horizontal) %>
-      <%= render DestroyerComponent.new(direction: :horizontal) %>
+      <%= render ShipComponent.new(type: :aircraft_carrier, direction: :horizontal).with_variant(:aircraft_carrier) %>
+      <%= render ShipComponent.new(type: :destroyer, direction: :horizontal).with_variant(:destroyer) %>
     </div>
   </div>
 </div>

@@ -25,7 +25,7 @@
 - [x] Set up ESLint
 - [x] Set up RuboCop
 - [x] Add LICENSE
-- [ ] Use variants for different ships
+- [x] Use variants for different ships
 - [ ] Add tests
 - [ ] Hit animation
 - [ ] Test on mobile

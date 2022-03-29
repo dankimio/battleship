@@ -13,14 +13,16 @@
 
           <div class="mb-3">
             <%= render BoardComponent.new(Board.empty(:main)) do %>
-              <%= render AircraftCarrierComponent.new direction: :vertical,
-                position: [7, 6],
-                hits: [true, true, true, true, true]
+              <%= render ShipComponent.new(
+                  direction: :vertical,
+                  position: [7, 6],
+                  hits: [true, true, true, true, true]
+                ).with_variant(:aircraft_carrier)
               %>
-              <%= render BattleshipComponent.new(direction: :vertical, position: [9, 3])%>
-              <%= render SubmarineComponent.new(direction: :horizontal, position: [3, 6]) %>
-              <%= render DestroyerComponent.new(direction: :horizontal, position: [3, 2]) %>
-              <%= render CruiserComponent.new(direction: :vertical, position: [6, 3]) %>
+              <%= render ShipComponent.new(type: :battleship, direction: :vertical, position: [9, 3]).with_variant(:battleship) %>
+              <%= render ShipComponent.new(type: :submarine, direction: :horizontal, position: [3, 6]).with_variant(:submarine) %>
+              <%= render ShipComponent.new(type: :destroyer, direction: :horizontal, position: [3, 2]).with_variant(:destroyer) %>
+              <%= render ShipComponent.new(type: :cruiser, direction: :vertical, position: [6, 3]).with_variant(:cruiser) %>
             <% end %>
           </div>
 
