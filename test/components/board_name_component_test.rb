@@ -1,10 +1,20 @@
 require 'test_helper'
 
 class BoardNameComponentTest < ViewComponent::TestCase
-  def test_component_renders_something_useful
-    # assert_equal(
-    #   %(<span>Hello, components!</span>),
-    #   render_inline(BoardNameComponent.new(message: "Hello, components!")).css("span").to_html
-    # )
+  test 'should render' do
+    render_inline(BoardNameComponent.new(:main))
+    assert_selector('.board-name')
+  end
+
+  test "should render main player's name" do
+    render_inline(BoardNameComponent.new(:main))
+    assert_selector('.main')
+    assert_text('Your fleet')
+  end
+
+  test "should render opponent's name" do
+    render_inline(BoardNameComponent.new(:opponent))
+    assert_selector('.opponent')
+    assert_text('Opponent')
   end
 end
