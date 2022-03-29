@@ -27,7 +27,7 @@
 - [x] Set up RuboCop
 - [x] Add LICENSE
 - [x] Use variants for different ships
-- [ ] Add tests
+- [x] Add tests
 - [ ] Hit animation
 - [ ] Test on mobile
 - [ ] Add docs and update README

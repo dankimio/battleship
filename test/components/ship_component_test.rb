@@ -22,6 +22,16 @@ class ShipComponentTest < ViewComponent::TestCase
     assert_selector('.ship .spacer.spacer-between')
   end
 
+  test 'should render hits' do
+    hits = [true, true]
+
+    with_variant :cruiser do
+      render_inline(ShipComponent.new(type: :cruiser, direction: :horizontal, hits: hits))
+    end
+
+    assert_selector('.hit', count: hits.count(true))
+  end
+
   test '#vertical?' do
     component = ShipComponent.new(type: :cruiser, direction: :vertical)
 
