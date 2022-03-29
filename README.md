@@ -16,6 +16,7 @@
 ## Notes
 
 - Board atom hits and misses are generated randomly on page load (see `app/javascript/home.js`) for code brevity and readability. Alternatively, they could be populated with back-end data (see `app/models/board.rb` and `app/components/board_component.rb`).
+- `ShipComponent` uses variants API, to be deprecated in version 3. Variants could potentially be implemented by extracting into additional components or sub-partials.
 
 ## To-Do
 

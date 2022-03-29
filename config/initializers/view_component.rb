@@ -1,0 +1,1 @@
+ViewComponent::Deprecation.behavior = :silence
