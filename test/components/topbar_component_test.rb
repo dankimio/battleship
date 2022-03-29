@@ -1,10 +1,15 @@
 require 'test_helper'
 
 class TopbarComponentTest < ViewComponent::TestCase
-  def test_component_renders_something_useful
-    # assert_equal(
-    #   %(<span>Hello, components!</span>),
-    #   render_inline(TopbarComponent.new(message: "Hello, components!")).css("span").to_html
-    # )
+  setup do
+    render_inline(TopbarComponent.new)
+  end
+
+  test 'should render' do
+    assert_selector('div')
+  end
+
+  test 'should render logo' do
+    assert_selector('div > img')
   end
 end
