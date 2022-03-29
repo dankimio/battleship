@@ -4,11 +4,11 @@ class Board
 
   attr_reader :player_type, :rows
 
-  # player_type: :main, :opponent
-  # rows: 10x10 array with board values
-  # - nil: default
-  # - false: miss
-  # - true: hit
+  # @param player_type [Symbol] :main or :opponent
+  # @param rows [Array<Array>] 10x10 array with board values
+  #   - nil: default
+  #   - false: miss
+  #   - true: hit
   def initialize(player_type, rows)
     raise ArgumentError unless player_type.in?(PLAYER_TYPES)
 

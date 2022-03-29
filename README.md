@@ -13,6 +13,9 @@
 
 [ViewComponent](https://viewcomponent.org) is used as the component framework.
 
+- `BoardComponent` will render a board that is defined by `Board` instance. Inside, `BoardComponent` will render two CSS grids: one for board squares (`BoardAtom`s within `BoardRow`s) and one for ships.
+- `ShipComponent` accepts `direction` (horizontal or vertical), `position` (x and y coordinates on the board), type (e.g. aircraft carrier or cruiser) params as well as hits to define atoms that have been hit.
+
 ## Notes
 
 - Board atom hits and misses are generated randomly on page load (see `app/javascript/home.js`) for code brevity and readability. Alternatively, they could be populated with back-end data (see `app/models/board.rb` and `app/components/board_component.rb`).

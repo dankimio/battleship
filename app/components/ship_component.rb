@@ -11,6 +11,10 @@ class ShipComponent < ViewComponent::Base
 
   attr_reader :hits
 
+  # @param direction [String] horizontal or vertical
+  # @param hits [Array<TrueClass, FalseClass>] defines atoms that have been hit
+  # @param position [Array<Integer>] ship coordinates [x, y]
+  # @param type [Symbol] see TYPES for available types
   def initialize(direction:, hits: [], silhouette: false, position: nil, type: :aircraft_carrier)
     @direction = direction
     @x, @y = position
