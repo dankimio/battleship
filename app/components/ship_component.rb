@@ -21,21 +21,11 @@ class ShipComponent < ViewComponent::Base
     # therefore @hits must be reversed.
     @hits = direction == :horizontal ? hits.reverse : hits
 
-    @class_list = [
-      "ship-#{@direction}"
-    ]
-    @class_list.push("col-start-#{@x}", "row-start-#{@y}") if position
+    @class_list = ["ship-#{@direction}"]
     @class_list << 'silhouette' if silhouette
-
-    if vertical? && position
-      @class_list << 'col-span-1'
-      @class_list << "row-span-#{size}"
-    end
-
-    if horizontal? && position
-      @class_list << 'row-span-1'
-      @class_list << "col-span-#{size}"
-    end
+    @class_list.push("col-start-#{@x}", "row-start-#{@y}") if position
+    @class_list.push('col-span-1', "row-span-#{size}") if vertical? && position
+    @class_list.push('row-span-1', "col-span-#{size}") if horizontal? && position
   end
 
   def classes
