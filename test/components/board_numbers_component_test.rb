@@ -1,10 +1,11 @@
 require 'test_helper'
 
 class BoardNumbersComponentTest < ViewComponent::TestCase
-  def test_component_renders_something_useful
-    # assert_equal(
-    #   %(<span>Hello, components!</span>),
-    #   render_inline(BoardNumbersComponent.new(message: "Hello, components!")).css("span").to_html
-    # )
+  setup do
+    render_inline(BoardLettersComponent.new)
+  end
+
+  test 'should render' do
+    assert_selector('.board-numbers > *', count: 10)
   end
 end
