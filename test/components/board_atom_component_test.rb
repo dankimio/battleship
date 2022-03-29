@@ -11,21 +11,21 @@ class BoardAtomComponentTest < ViewComponent::TestCase
   test 'should render default state' do
     render_inline(BoardAtomComponent.new(nil))
 
-    assert page.has_no_css?('.miss')
-    assert page.has_no_css?('.hit')
+    assert_no_selector('.miss')
+    assert_no_selector('.hit')
   end
 
   test 'should render missed state' do
     render_inline(BoardAtomComponent.new(false))
 
-    assert page.has_css?('.miss')
-    assert page.has_no_css?('.hit')
+    assert_selector('.miss')
+    assert_no_selector('.hit')
   end
 
   test 'should render hit state' do
     render_inline(BoardAtomComponent.new(true))
 
-    assert page.has_no_css?('.miss')
-    assert page.has_css?('.hit')
+    assert_no_selector('.miss')
+    assert_selector('.hit')
   end
 end

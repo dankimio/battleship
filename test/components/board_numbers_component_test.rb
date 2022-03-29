@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BoardNumbersComponentTest < ViewComponent::TestCase
   setup do
-    render_inline(BoardLettersComponent.new)
+    render_inline(BoardNumbersComponent.new)
   end
 
   test 'should render' do
