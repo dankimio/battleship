@@ -5,7 +5,8 @@
 ![Screenshot](./screenshot.png)
 
 - Ruby version: 3.1
-- System dependencies: `$ brew install postgresql yarn`
+- System dependencies: `$ brew install postgresql node yarn`
+- Install dependencies: `$ bundle install`, `$ yarn install`
 - Database initialization: `$ rails db:setup`
 - How to run the test suite: `$ rails test`
 - Start the development server: `$ bin/dev`
