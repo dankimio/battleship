@@ -2,11 +2,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Base */
 @import "./typography.css";
+
+/* ViewComponent components */
 @import "./board_letters.css";
 @import "./board_numbers.css";
 @import "./board.css";
 @import "./board_atom.css";
 @import "./board_name.css";
-@import "./ships.css";
+@import "./ship.css";
+@import "./ship_atom.css";
+
+/* Pages */
 @import "./components.css";

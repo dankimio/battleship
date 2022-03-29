@@ -1,0 +1,61 @@
+.ship {
+  @apply flex items-center pointer-events-auto;
+
+  &.ship-vertical {
+    @apply flex-col;
+
+    & .spacer {
+      @apply w-8;
+    }
+  }
+
+  &.ship-horizontal {
+    @apply flex-row-reverse;
+
+    & .front-default,
+    & .front-aircraft-carrier,
+    & .front-submarine,
+    & .back-aircraft-carrier,
+    & .back-default {
+      @apply rotate-90;
+    }
+
+    & .spacer {
+      @apply h-8;
+    }
+  }
+
+  & .spacer {
+    @apply border;
+  }
+
+  & .spacer-between {
+    @apply border-gray-3;
+  }
+
+  & .spacer-edge {
+    @apply border-transparent;
+  }
+
+  &.silhouette {
+    & .ship-atom {
+      @apply bg-gray-6;
+
+      & .nucleus {
+        @apply bg-gray-3;
+      }
+
+      &:hover {
+        @apply cursor-auto;
+
+        & .nucleus {
+          @apply ring-0;
+        }
+      }
+    }
+
+    & .spacer-between {
+      @apply border-gray-6;
+    }
+  }
+}
