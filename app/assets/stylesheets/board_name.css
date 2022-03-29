@@ -1,0 +1,11 @@
+.board-name {
+  @apply rounded py-3 header-3 text-white text-center align-middle;
+
+  &.main {
+    @apply bg-blue-0;
+  }
+
+  &.opponent {
+    @apply bg-gray-2;
+  }
+}

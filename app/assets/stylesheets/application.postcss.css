@@ -3,6 +3,10 @@
 @import "tailwindcss/utilities";
 
 @import "./typography.css";
+@import "./board_letters.css";
+@import "./board_numbers.css";
 @import "./board.css";
+@import "./board_atom.css";
+@import "./board_name.css";
 @import "./ships.css";
 @import "./components.css";

@@ -1,0 +1,6 @@
+.board-letters {
+  @apply grid text-center;
+
+  grid-template-columns: 34px repeat(10, 34px) auto;
+  grid-template-rows: 34px;
+}

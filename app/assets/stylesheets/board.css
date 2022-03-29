@@ -1,17 +1,3 @@
-.board-letters {
-  @apply grid text-center;
-
-  grid-template-columns: 34px repeat(10, 34px) auto;
-  grid-template-rows: 34px;
-}
-
-.board-numbers {
-  @apply grid text-center;
-
-  grid-template-columns: 34px;
-  grid-template-rows: repeat(10, 34px);
-}
-
 .board {
   @apply grid text-center;
 
@@ -20,69 +6,5 @@
 
   & .ship {
     @apply mx-auto my-auto;
-  }
-}
-
-.board-atom {
-  @apply rounded flex items-center justify-center transition-colors hover:cursor-pointer;
-
-  margin: 1px;
-}
-
-.board-main {
-  & .board-atom {
-    @apply bg-blue-3;
-
-    &:hover, &.hover {
-      @apply bg-blue-2;
-
-      &.miss::before {
-        /*
-          This is a custom color, it is not defined in the design system.
-          It is darker version of blue-2 to handle hover + active state.
-        */
-        background-color: #DDE2F7;
-      }
-    }
-
-    &.miss::before {
-      @apply bg-blue-2 w-4 h-4 rounded-full;
-
-      content: '';
-    }
-  }
-}
-
-.board-opponent {
-  & .board-atom {
-    @apply bg-gray-5;
-
-    &:hover, &.hover {
-      @apply bg-gray-4;
-    }
-
-    &.miss::before {
-      @apply bg-gray-3 w-4 h-4 rounded-full;
-
-      content: '';
-    }
-
-    &.hit::before {
-      @apply bg-red-0 w-4 h-4 rounded-full;
-
-      content: '';
-    }
-  }
-}
-
-.board-name {
-  @apply rounded py-3 header-3 text-white text-center align-middle;
-
-  &.main {
-    @apply bg-blue-0;
-  }
-
-  &.opponent {
-    @apply bg-gray-2;
   }
 }

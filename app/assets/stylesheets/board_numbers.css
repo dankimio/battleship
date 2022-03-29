@@ -1,0 +1,6 @@
+.board-numbers {
+  @apply grid text-center;
+
+  grid-template-columns: 34px;
+  grid-template-rows: repeat(10, 34px);
+}
