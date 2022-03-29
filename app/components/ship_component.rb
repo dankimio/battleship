@@ -1,5 +1,5 @@
 class ShipComponent < ViewComponent::Base
-  SHIP_SIZES = {
+  SIZES = {
     aircraft_carrier: 5,
     battleship: 4,
     cruiser: 2,
@@ -46,6 +46,6 @@ class ShipComponent < ViewComponent::Base
   end
 
   def size
-    SHIP_SIZES[@type]
+    SIZES[@type]
   end
 end
