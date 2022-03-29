@@ -5,9 +5,10 @@
 ![Screenshot](./screenshot.png)
 
 - Ruby version: 3.1
-- System dependencies: `$ brew install postgresql`
+- System dependencies: `$ brew install postgresql yarn`
 - Database initialization: `$ rails db:setup`
 - How to run the test suite: `$ rails test`
+- Start the development server: `$ bin/dev`
 
 ## Components
 
@@ -34,6 +35,6 @@
 - [x] Add tests
 - [x] Test on mobile
 - [x] Add page titles
+- [x] Add docs and update README
+- [x] Validate HTML and CSS; Lighthouse, etc.
 - [ ] Hit animation
-- [ ] Add docs and update README
-- [ ] Validate HTML and CSS; Lighthouse, etc.
