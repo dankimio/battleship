@@ -50,10 +50,14 @@
     </div>
   </div>
 
-  <div class="px-4 text-center text-gray-1">
+  <div class="px-4 flex justify-center gap-8">
     <%= link_to 'Components',
       components_path,
-      class: 'hover:underline hover:text-gray-0'
+      class: 'text-gray-1 hover:underline hover:text-gray-0 transition duration-75'
+    %>
+    <%= link_to 'GitHub',
+      'https://github.com/dankimio/battleship',
+      class: 'text-gray-1 hover:underline hover:text-gray-0 transition duration-75'
     %>
   </div>
 </div>
