@@ -9,3 +9,9 @@
     }
   }
 }
+
+#components-navigation {
+  & a {
+    @apply underline hover:text-gray-1 transition duration-75;
+  }
+}
