@@ -37,7 +37,11 @@
       @apply bg-blue-2;
 
       &.miss::before {
-        @apply bg-gray-4;
+        /*
+          This is a custom color, it is not defined in the design system.
+          It is darker version of blue-2 to handle hover + active state.
+        */
+        background-color: #DDE2F7;
       }
     }
 
