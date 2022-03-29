@@ -1,0 +1,19 @@
+@media screen and (max-width: 375px) {
+  .board-container {
+    @apply scale-75 mb-0;
+  }
+
+  .shipyard-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 475px) {
+  .board-container {
+    @apply scale-90 mb-0;
+  }
+
+  .shipyard-container {
+    display: none;
+  }
+}

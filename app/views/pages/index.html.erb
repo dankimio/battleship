@@ -11,7 +11,7 @@
             <%= render BoardNameComponent.new(:main) %>
           </div>
 
-          <div class="mb-3">
+          <div class="mb-3 board-container">
             <%= render BoardComponent.new(Board.empty(:main)) do %>
               <%= render ShipComponent.new(
                   direction: :vertical,
@@ -26,7 +26,7 @@
             <% end %>
           </div>
 
-          <div class="self-start lg:ml-2">
+          <div class="self-start lg:ml-2 shipyard-container">
             <%= render ShipyardComponent.new %>
           </div>
         </div>
@@ -38,11 +38,11 @@
             <%= render BoardNameComponent.new(:opponent) %>
           </div>
 
-          <div class="mb-3">
+          <div class="mb-3 board-container">
             <%= render BoardComponent.new(Board.empty(:opponent)) %>
           </div>
 
-          <div class="self-start lg:ml-2">
+          <div class="self-start lg:ml-2 shipyard-container">
             <%= render GraveyardComponent.new %>
           </div>
         </div>
