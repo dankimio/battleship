@@ -7,12 +7,17 @@ class ShipComponent < ViewComponent::Base
     submarine: 3
   }
 
+  TYPES = %i[aircraft_carrier battleship cruiser destroyer submarine]
+
   attr_reader :hits
 
   def initialize(direction:, hits: [], silhouette: false, position: nil, type: :aircraft_carrier)
     @direction = direction
     @x, @y = position
+
+    raise ArgumentError unless TYPES.include?(type)
     @type = type
+
     @hits = Array.new(size, false) if hits.blank?
 
     # Horizontal ships are rendered from left to right.
