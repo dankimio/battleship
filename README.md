@@ -30,7 +30,7 @@
 - [x] Use variants for different ships
 - [x] Add tests
 - [x] Test on mobile
+- [x] Add page titles
 - [ ] Hit animation
 - [ ] Add docs and update README
-- [ ] Add page titles
 - [ ] Validate HTML and CSS; Lighthouse, etc.
