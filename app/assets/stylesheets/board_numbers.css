@@ -1,3 +1,5 @@
+/* Styles for BoardNumbersComponent */
+
 .board-numbers {
   @apply grid text-center;
 

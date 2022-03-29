@@ -22,6 +22,7 @@
 - Board atom hits and misses are generated randomly on page load (see `app/javascript/home.js`) for code brevity and readability. Alternatively, they could be populated with back-end data (see `app/models/board.rb` and `app/components/board_component.rb`).
 - `ShipComponent` uses variants API, to be deprecated in version 3. Variants could potentially be implemented by extracting into additional components or sub-partials.
 - Additional work required to render on mobile devices. Currently tested on screens wider than 500px: iPhone SE in landscape mode (568px), iPad mini in portrait mode (768px). On smaller screens boards are rendered in 1 column.
+- Style sheets for components are located in `app/assets/stylesheets`. These could possibly be moved to `app/components`, though that would require additional configuration.
 
 ## To-Do
 

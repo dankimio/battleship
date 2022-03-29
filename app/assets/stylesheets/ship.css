@@ -1,3 +1,5 @@
+/* Styles for ShipComponent */
+
 .ship {
   @apply flex items-center pointer-events-auto;
 

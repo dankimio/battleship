@@ -1,3 +1,5 @@
+/* Styles for BoardLettersComponent */
+
 .board-letters {
   @apply grid text-center;
 

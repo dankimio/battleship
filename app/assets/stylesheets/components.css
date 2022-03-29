@@ -1,3 +1,5 @@
+/* Styles for pages#components */
+
 .components-grid {
   & div {
     @apply mx-auto;
