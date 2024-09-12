@@ -1,8 +1,8 @@
 class BoardAtomComponent < ViewComponent::Base
   STATES = {
-    nil => '',
-    false => 'miss',
-    true => 'hit'
+    nil => "",
+    false => "miss",
+    true => "hit"
   }.freeze
 
   def initialize(state = nil, hover: false)
@@ -11,8 +11,8 @@ class BoardAtomComponent < ViewComponent::Base
   end
 
   def classes
-    result = [STATES[@state]]
-    result << 'hover' if @hover
-    result.join(' ')
+    result = [ STATES[@state] ]
+    result << "hover" if @hover
+    result.join(" ")
   end
 end

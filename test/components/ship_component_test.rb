@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class ShipComponentTest < ViewComponent::TestCase
   setup do
@@ -7,38 +7,38 @@ class ShipComponentTest < ViewComponent::TestCase
     end
   end
 
-  test 'should render' do
-    assert_selector('.ship')
+  test "should render" do
+    assert_selector(".ship")
   end
 
-  test 'should validate type' do
+  test "should validate type" do
     assert_raise ArgumentError do
       render_inline(ShipComponent.new(direction: :horizontal, type: :abc))
     end
   end
 
-  test 'should render spacers' do
-    assert_selector('.ship .spacer.spacer-edge', count: 2)
-    assert_selector('.ship .spacer.spacer-between')
+  test "should render spacers" do
+    assert_selector(".ship .spacer.spacer-edge", count: 2)
+    assert_selector(".ship .spacer.spacer-between")
   end
 
-  test 'should render hits' do
-    hits = [true, true]
+  test "should render hits" do
+    hits = [ true, true ]
 
     with_variant :cruiser do
       render_inline(ShipComponent.new(type: :cruiser, direction: :horizontal, hits: hits))
     end
 
-    assert_selector('.hit', count: hits.count(true))
+    assert_selector(".hit", count: hits.count(true))
   end
 
-  test '#vertical?' do
+  test "#vertical?" do
     component = ShipComponent.new(type: :cruiser, direction: :vertical)
 
     assert component.vertical?
   end
 
-  test '#horizontal?' do
+  test "#horizontal?" do
     component = ShipComponent.new(type: :cruiser, direction: :horizontal)
 
     assert component.horizontal?

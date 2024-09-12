@@ -17,9 +17,9 @@ class ShipAtomComponent < ViewComponent::Base
   end
 
   def classes
-    result = [@type]
-    result << 'hover' if @hover
-    result << 'hit' if @hit
-    result.join(' ')
+    result = [ @type ]
+    result << "hover" if @hover
+    result << "hit" if @hit
+    result.join(" ")
   end
 end
