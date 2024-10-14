@@ -173,7 +173,6 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.8)
     propshaft (1.0.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -271,6 +270,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sqlite3 (2.1.0)
+      mini_portile2 (~> 2.8.0)
+    sqlite3 (2.1.0-arm64-darwin)
     sshkit (1.23.1)
       base64
       net-scp (>= 1.1.2)
@@ -323,13 +325,13 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kamal (>= 2.0.0)
-  pg (~> 1.1)
   propshaft
   puma (>= 5.0)
   rails (~> 7.2.1)
   redis (>= 4.0.1)
   rubocop-rails-omakase
   selenium-webdriver
+  sqlite3 (>= 2.1)
   stimulus-rails
   thruster
   turbo-rails
