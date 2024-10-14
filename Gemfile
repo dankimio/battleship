@@ -33,6 +33,12 @@ gem "tzinfo-data", platforms: %i[windows jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
+gem "kamal", ">= 2.0.0", require: false
+
+# Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
+gem "thruster", require: false
+
 # Utilities
 gem "view_component", "~> 2.51"
 
