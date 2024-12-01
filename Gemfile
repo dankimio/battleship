@@ -34,7 +34,7 @@ gem "kamal", ">= 2.0.0", require: false
 gem "thruster", require: false
 
 # Utilities
-gem "view_component", "~> 2.51"
+gem "view_component", "~> 3.20"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
